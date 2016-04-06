@@ -2,8 +2,13 @@
 from __future__ import unicode_literals
 
 from django.db import models, migrations
+<<<<<<< HEAD
 import django.utils.timezone
 from django.conf import settings
+=======
+from django.conf import settings
+import django.utils.timezone
+>>>>>>> 5568dec7fed51abab79184df9bbcb0d5ad3ae788
 
 
 class Migration(migrations.Migration):
@@ -16,7 +21,11 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Post',
             fields=[
+<<<<<<< HEAD
                 ('id', models.AutoField(verbose_name='ID', auto_created=True, primary_key=True, serialize=False)),
+=======
+                ('id', models.AutoField(verbose_name='ID', auto_created=True, serialize=False, primary_key=True)),
+>>>>>>> 5568dec7fed51abab79184df9bbcb0d5ad3ae788
                 ('title', models.CharField(max_length=200)),
                 ('text', models.TextField()),
                 ('created_date', models.DateTimeField(default=django.utils.timezone.now)),
